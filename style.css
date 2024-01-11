@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* changement scroll */
+  word-break: normal;
+}
+
+header {
+  width: 100%;
+  position: fixed; /* fixer le header */
+  z-index: 999; /* lasser le header toujous la en scrollant */
+  padding: 10px 30px;
+  background-color: rgba(54, 54, 54, 0.7);
+}
+
+.logo {
+  height: 30px;
+  transition: 0.3s; /* Animation */
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.navigation a:hover {
+  letter-spacing: unset;
+  font-size: 1.6em;
+  color: rgb(173, 173, 173) !important;
+  text-align: center;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.chapitre {
+  font-size: 26px;
+  color: #d6d6d6;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* ------------Acceuil-------- */
+body{
+  background-image: url(".//images/backk.webp");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
+}
+.main {
+  width: 100%;
+  min-height: 100vh; /*hauteur de la fenêtre*/
+  padding-top: 240px;
+  align-items: center;
+  background: url(images/hd.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* l'image ne bouge pas quand je scrolle */
+}
+
+.main h3 {
+  color: #af6667;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.main h1 {
+  margin-top: 10px;
+  color: rgb(228, 228, 228);
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.main h4 {
+  color: rgb(204, 204, 204);
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.main-btn {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    -225deg,
+    #a445b2 0%,
+    #d41872 52%,
+    #ff0066 100%
+  );
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  transition: 0.8s ease;
+}
+
+.main-btn:hover {
+  transform: scale(1.1);
+  color: rgb(216, 187, 187);
+  box-shadow: 2px 2px, -2px 0 0.4em;
+}
+
+.social-icons a {
+  color: rgb(194, 183, 183);
+  font-size: 2.5em;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.social-icons a:hover {
+  color: rgb(165, 135, 135);
+}
+
+.title {
+  display: flex;
+  justify-content: center;  
+  color: rgb(214, 214, 214);
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+}
+
+
+ 
+/*-------social------*/
+
+.social {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  height: 100%;
+}
+
+.social .social-item {
+  margin: 0 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social .social-item .social-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(0, 0);
+  transition: all 0.4s ease;
+}
+
+.social .social-item .social-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  height: 100%;
+  width: 10px;
+  background: #b1b1b1;
+  transition: all 0.4s ease;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.social .social-item .social-link::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -5px;
+  height: 10px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: all 0.4s ease;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.social .social-item .social-link:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(5px, -5px);
+  box-shadow: -20px 20px 10px rgba(255, 255, 255, 0.5);
+}
+
+.social .social-item:nth-child(1) a {
+  color: #f0ebeb;
+}
+
+.social .social-item:nth-child(1):hover a {
+  background: #ffffff;
+}
+
+.social .social-item:nth-child(1):hover a::before {
+  background: #ffffff;
+}
+
+.social .social-item:nth-child(1):hover a::after {
+  background: #ffffff;
+}
+
+.social .social-item:nth-child(2) a {
+  color: #55acee;
+}
+
+.social .social-item:nth-child(2):hover a {
+  background: #55acee;
+}
+
+.social .social-item:nth-child(2):hover a::before {
+  background: #55acee;
+}
+
+.social .social-item:nth-child(2):hover a::after {
+  background: #55acee;
+}
+
+.social .social-item:nth-child(3) a {
+  color: #dd4b39;
+}
+
+.social .social-item:nth-child(3):hover a {
+  background: #dd4b39;
+}
+
+.social .social-item:nth-child(3):hover a::before {
+  background: #dd4b39;
+}
+
+.social .social-item:nth-child(3):hover a::after {
+  background: #dd4b39;
+}
+
+.social .social-item:nth-child(2) a {
+  color: #55acee;
+}
+
+.social .social-item:nth-child(2):hover a {
+  background: #55acee;
+}
+
+.social .social-item:nth-child(2):hover a::before {
+  background: #55acee;
+}
+
+.social .social-item:nth-child(2):hover a::after {
+  background: #55acee;
+}
+.social .social-item .social-link:hover {
+  color: #ffffff;
+}
+
+
+/*----Skills-----*/
+.skills{
+  color: white;
+  }
+  #cards .card {
+    border-radius: 20px;
+    min-height: 100%;
+  }
+   
+  
+  #cards .heading-border {
+    position: absolute;
+    width: 20%;
+    top: 60%;
+  }
+  
+  #cards .card .user-picture img {
+    position: absolute;
+    top: -55%;
+    right: 5%;
+    background: #ffffff!important;
+    padding: 10px;
+  }
+  
+  #cards .card .user-content .user-name {
+    margin-right: 0px;
+  }
+/* ------------- Photograpy ------------*/
+.photograpy {
+  background: rgb(18, 18, 36);
+  background: linear-gradient(
+    56deg,
+    rgba(18, 18, 36, 1) 4%,
+    rgba(0, 0, 0, 1) 67%,
+    rgba(26, 26, 32, 1) 81%
+  );
+}
+.photograpy p,
+strong {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card-photograpy {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  min-height: 15em;
+  width: 25em;
+  overflow: hidden;
+  margin: 30px;
+  transition: 0.8s ease;
+}
+
+.card-photograpy:hover {
+  transform: scale(1.1);
+}
+.card-photograpy:hover .img-photograpy {
+  opacity: 0.9;
+}
+
+.img-photograpy img {
+  width: 100%;
+}
+
+.info-photograpy {
+  padding: 1em;
+  text-align: center;
+}
+.description{
+  padding: 10px;
+  font-size: small;
+}
+
+/* ------------- footer ------------*/
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  background-image: url(".//images/backk.webp");
+}
+
+footer p {
+  padding-top: 14px;
+  color: rgb(155, 148, 148);
+}
+
+@media (max-width: 1023px) {
+  /* tout changement pour plus petit de 1023 */
+
+  header {
+    padding: 11px 10px 0px 0px;
+    background-color: black;
+  }
+  .navbar-toggler {
+    background-image: linear-gradient(
+      -225deg,
+      #a445b2 0%,
+      #d41872 52%,
+      #ff0066 100%
+    );
+  }
+
+  section {
+    padding: 70px 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .moi {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .moi h2 {
+    text-align: center;
+  }
+}
+
+/*-----Card Skills-----*/
+
+.card-skills {
+  width: 252px;
+  height: 265px;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+  background-color: black;
+  color: #ded8d8;
+}
+
+.imgSkills {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: white;
+  display: flex;
+  align-items: top;
+  justify-content: right;
+  padding: 10px;
+}
+
+.textSkills {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around; 
+}
+.textSkills .h3 {
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.textSkills .p {
+  font-family: 'Lucida Sans' sans-serif;
+  color: #999999;
+  font-size: 13px;
+}
+
+.card-skills:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 20px #bebebe,
+             -5px -5px 20px #ffffff;
+}
+/* ---------Carousel--------*/
+/* Style pour déplacer les flèches du carrousel à l'extérieur de l'image */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: brown; 
+    border: none;
+    font-size: 2rem; 
+  }
+
+.carousel-control-prev {
+    left: -100px !important;  
+}
+
+.carousel-control-next {
+    right: -100px !important;  
+}
