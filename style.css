@@ -362,11 +362,6 @@ footer p {
 
 @media (max-width: 1023px) {
   /* tout changement pour plus petit de 1023 */
-
-  header {
-    padding: 11px 10px 0px 0px;
-    background-color: black;
-  }
   .navbar-toggler {
     background-image: linear-gradient(
       -225deg,
@@ -375,23 +370,29 @@ footer p {
       #ff0066 100%
     );
   }
-
-  section {
+  header{
+    width: auto ;
+  }
+  .navigation{
+    width: 428px; 
+  }
+  section, #cards {
     padding: 70px 20px;
   }
-
+ 
   .content {
     flex-direction: column;
     align-items: center;
+    margin-left: -34px;
   }
   .moi {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .moi h2 {
-    text-align: center;
-  }
+  
+
 }
+
 
 /*-----Card Skills-----*/
 
