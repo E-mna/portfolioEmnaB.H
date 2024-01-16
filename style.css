@@ -49,27 +49,23 @@ section {
 }
 
 /* ------------Acceuil-------- */
+/*
 body{
   background-image: url(".//images/backk.webp");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; 
 }
+*/
 .main {
   width: 100%;
-  min-height: 100vh; /*hauteur de la fenêtre*/
+  min-height: 100vh;  
   padding-top: 240px;
   align-items: center;
   background: url(images/hd.jpeg) no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; /* l'image ne bouge pas quand je scrolle */
-}
-
-.main h3 {
-  color: #af6667;
-  font-size: 1em;
-  font-weight: 500;
+  background-attachment: fixed; 
 }
 
 .main h1 {
@@ -270,35 +266,6 @@ body{
 .social .social-item .social-link:hover {
   color: #ffffff;
 }
-
-
-/*----Skills-----*/
-.skills{
-  color: white;
-  }
-  #cards .card {
-    border-radius: 20px;
-    min-height: 100%;
-  }
-   
-  
-  #cards .heading-border {
-    position: absolute;
-    width: 20%;
-    top: 60%;
-  }
-  
-  #cards .card .user-picture img {
-    position: absolute;
-    top: -55%;
-    right: 5%;
-    background: #ffffff!important;
-    padding: 10px;
-  }
-  
-  #cards .card .user-content .user-name {
-    margin-right: 0px;
-  }
 /* ------------- Photograpy ------------*/
 .photograpy {
   background: rgb(18, 18, 36);
@@ -313,7 +280,6 @@ body{
 strong {
   font-family: "Courier New", Courier, monospace;
 }
-
 .card-photograpy {
   background-color: white;
   border: 1px solid white;
@@ -359,40 +325,6 @@ footer p {
   padding-top: 14px;
   color: rgb(155, 148, 148);
 }
-
-@media (max-width: 1023px) {
-  /* tout changement pour plus petit de 1023 */
-  .navbar-toggler {
-    background-image: linear-gradient(
-      -225deg,
-      #a445b2 0%,
-      #d41872 52%,
-      #ff0066 100%
-    );
-  }
-  header{
-    width: auto ;
-  }
-  .navigation{
-    width: 428px; 
-  }
-  section, #cards {
-    padding: 70px 20px;
-  }
- 
-  .content {
-    flex-direction: column;
-    align-items: center;
-    margin-left: -34px;
-  }
-  .moi {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  
-
-}
-
 
 /*-----Card Skills-----*/
 
@@ -459,4 +391,41 @@ footer p {
 }
 .tech{
   margin-top: 30px;
+}
+
+
+@media (max-width: 1023px) {
+  /* tout changement pour plus petit de 1023 */
+  
+  header {
+    padding: 11px 10px 0px 0px;
+    background-color: black;
+  }
+  .navbar-toggler {
+    background-image: linear-gradient(
+      -225deg,
+      #a445b2 0%,
+      #d41872 52%,
+      #ff0066 100%
+    );
+  }
+  section {
+    padding: 70px 20px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -34px;
+  }
+  .moi {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .moi {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .moi h2 {
+    text-align: center;
+  }
 }
