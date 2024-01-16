@@ -3,8 +3,11 @@
   padding: 0;
   scroll-behavior: smooth; /* changement scroll */
   word-break: normal;
+  box-sizing: border-box;
 }
-
+body {
+  overflow-x: hidden;
+}
 header {
   width: 100%;
   position: fixed; /* fixer le header */
@@ -12,7 +15,6 @@ header {
   padding: 10px 30px;
   background-color: rgba(54, 54, 54, 0.7);
 }
-
 .logo {
   height: 30px;
   transition: 0.3s; /* Animation */
@@ -20,7 +22,6 @@ header {
 .logo:hover {
   transform: scale(1.2);
 }
-
 .navigation a {
   text-decoration: none;
   color: rgb(255, 255, 255) !important;
@@ -29,7 +30,6 @@ header {
   padding-left: 30px;
   cursor: pointer;
 }
-
 .navigation a:hover {
   letter-spacing: unset;
   font-size: 1.6em;
@@ -49,14 +49,7 @@ section {
 }
 
 /* ------------Acceuil-------- */
-/*
-body{
-  background-image: url(".//images/backk.webp");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; 
-}
-*/
+ 
 .main {
   width: 100%;
   min-height: 100vh;  
@@ -132,9 +125,6 @@ body{
   justify-content: center;
   flex-wrap: wrap;  
 }
-
-
- 
 /*-------social------*/
 
 .social {
@@ -381,9 +371,6 @@ footer p {
   background-image: url(".//images/backk.webp");
    
 }
-
-
-
 /* ---------Carousel--------*/
 /* Style pour déplacer les flèches du carrousel à l'extérieur de l'image */
 .carousel-control-prev,
@@ -407,7 +394,6 @@ footer p {
 
 @media (max-width: 1023px) {
   /* tout changement pour plus petit de 1023 */
-  
   header {
     padding: 11px 10px 0px 0px !important;
     background-color: black;
@@ -422,20 +408,18 @@ footer p {
   }
   section {
     padding: 70px 20px;
+    overflow-x: hidden;
   }
   .content {
     flex-direction: column;
     align-items: center;
-    margin-left: -34px;
+    margin-left: -44px;
   }
   #cards .container{
-    
-    margin-left: 70px;
-     
+    margin-left: 40px;
   }
-  .moi {
-    flex-direction: column-reverse;
-    align-items: center;
+  .chapitre{
+    margin-right: 90px ;
   }
   .moi {
     flex-direction: column-reverse;
@@ -445,3 +429,21 @@ footer p {
     text-align: center;
   }
 }
+ 
+@media (max-width: 760px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -27px;
+  }
+  #cards .container{
+    margin-left: 30px;
+  }
+  .chapitre{
+    margin-right: 60px ;
+  }
+  .card-photograpy {
+    width: 20em;  
+  }
+}
+ 
