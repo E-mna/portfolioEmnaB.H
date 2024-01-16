@@ -373,6 +373,17 @@ footer p {
   box-shadow: 5px 5px 20px #bebebe,
              -5px -5px 20px #ffffff;
 }
+
+
+/*---------cards------*/
+
+#cards{
+  background-image: url(".//images/backk.webp");
+   
+}
+
+
+
 /* ---------Carousel--------*/
 /* Style pour déplacer les flèches du carrousel à l'extérieur de l'image */
 .carousel-control-prev,
@@ -398,7 +409,7 @@ footer p {
   /* tout changement pour plus petit de 1023 */
   
   header {
-    padding: 11px 10px 0px 0px;
+    padding: 11px 10px 0px 0px !important;
     background-color: black;
   }
   .navbar-toggler {
@@ -416,6 +427,11 @@ footer p {
     flex-direction: column;
     align-items: center;
     margin-left: -34px;
+  }
+  #cards .container{
+    
+    margin-left: 70px;
+     
   }
   .moi {
     flex-direction: column-reverse;
